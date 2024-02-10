@@ -28,6 +28,8 @@ public class StockMarket {
                 value[i] = Integer.parseInt(reader.readLine());
             }
 
+
+            // PROBLEM START
             int startDay = 0;
             int maxLength = 0;
             for (int i = 1; i < days; i++) {
@@ -44,6 +46,8 @@ public class StockMarket {
             for (int i = startDay; i < startDay + maxLength; i++) {
                 writer.write(value[i] + "\n");
             }
+
+            // PROBLEM END
 
             reader.close();
             writer.close();
